@@ -22,7 +22,7 @@ public class Text_JButton {
         jbutton1.setSize(50,30);//设置按钮3的大小
         //按钮大小设置无用，且后面按钮会覆盖前面按钮，这是因为布局的原因
     }
-    public static JFrame initJFrame(){
+    public static JFrame initJFrame(){//创建窗口的方法
         JFrame window=new JFrame("窗口的学习");//创建窗口
         window.setVisible(true);//设置窗口可见
         window.setSize(500,300);//设置窗口大小
