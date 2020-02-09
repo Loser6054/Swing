@@ -21,5 +21,6 @@ public class Text_JFrame {
                                              * DISPOSE_ON_CLOSE 释放窗体资源
                                              */
         window.setIconImage(new ImageIcon("./.idea/picture/text.jpg").getImage());//设置图标   Icon：图标
+
     }
 }
