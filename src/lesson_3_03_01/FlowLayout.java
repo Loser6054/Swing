@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class FloatLayout {
+public class FlowLayout {
     private static final int window_W=300;
     private static final int window_H=300;
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class FloatLayout {
 
         //流水布局--对齐方式
         //给父控件添加布局方式，默认布局方式是BorderLayout
-        window.setLayout(new FlowLayout(FlowLayout.RIGHT,100,20));//添加流水布局方式，流水布局方式默认在中间排版
+        window.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT,100,20));//添加流水布局方式，流水布局方式默认在中间排版
                                                        // FlowLayout.RIGHT表示右对齐
                                                        // FlowLayout.RIGHT,100,20  表示右对齐且水平距离是100，垂直距离是20
         for(int i=1;i<=10;i++){
