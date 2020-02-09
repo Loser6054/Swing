@@ -9,18 +9,28 @@ public class Text_BorderLayout {
     private static final int window_H=300;
     public static void main(String[] args) {
         JFrame window=initJFrame();
-        JButton jbutton1=new JButton("我是按钮1");//按钮的创建
-        window.add(jbutton1);//添加按钮组件
-        jbutton1.setSize(50,10);//设置按钮1的大小
+//        JButton jbutton1=new JButton("我是按钮1");//按钮的创建
+//        window.add(jbutton1);//添加按钮组件
+//        jbutton1.setSize(50,10);//设置按钮1的大小
+//
+//        JButton jbutton2=new JButton("我是按钮2");//按钮的创建
+//        window.add(jbutton2);//添加按钮组件
+//        jbutton1.setSize(50,20);//设置按钮2的大小
+//
+//        JButton jbutton3=new JButton("我是按钮3");//按钮的创建
+//        window.add(jbutton3);//添加按钮组件
+//        jbutton1.setSize(50,30);//设置按钮3的大小
+//        //按钮大小设置无用，且后面按钮会覆盖前面按钮，这是因为布局的原因
+        window.setLayout(new BorderLayout(100,10));
+        for(int i=1;i<=5;i++){
+            JButton jbon=new JButton("按钮"+i);
+            if(i==1){window.add(jbon,BorderLayout.NORTH);}
+            if(i==2){window.add(jbon,BorderLayout.SOUTH);}
+            if(i==3){window.add(jbon,BorderLayout.WEST);}
+            if(i==4){window.add(jbon,BorderLayout.EAST);}
+            if(i==5){window.add(jbon,BorderLayout.CENTER);}//BorderLayout 默认是CENTER
+        }
 
-        JButton jbutton2=new JButton("我是按钮2");//按钮的创建
-        window.add(jbutton2);//添加按钮组件
-        jbutton1.setSize(50,20);//设置按钮2的大小
-
-        JButton jbutton3=new JButton("我是按钮3");//按钮的创建
-        window.add(jbutton3);//添加按钮组件
-        jbutton1.setSize(50,30);//设置按钮3的大小
-        //按钮大小设置无用，且后面按钮会覆盖前面按钮，这是因为布局的原因
     }
     public static JFrame initJFrame(){//创建窗口的方法
         JFrame window=new JFrame("窗口的学习");//创建窗口
