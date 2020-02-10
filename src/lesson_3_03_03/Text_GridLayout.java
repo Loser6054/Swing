@@ -3,7 +3,7 @@ package lesson_3_03_03;
 import javax.swing.*;
 import java.awt.*;
 
-
+//GridLayout
 public class Text_GridLayout {
     private static final int window_W=300;
     private static final int window_H=300;
